@@ -1,65 +1,96 @@
+
+
+
+
+  
+  
+[//]: # (____________________________________PROJECT TITLE____________________________________)
+
 <br>
-<hr style="height:4px;border-width:10;color:blue;background-color:black">
 
-<img src="img/logo.png" alt="Smiley face" width="100" height="100" align="left">
+<h1 align="center">
+  <img src=https://github.com/najwasaeed44/data-science-project-theme/blob/main/img/logo.png?raw=true" width="100px"/><br/><br>
+PROJECT TITLE
+</h1>
+                                                                                                                    <hr style="height:1.5px;border-width:10;color:blue;background-color:black">
 
-# PROJECT TITLE
-<hr style="height:4px;border-width:10;color:blue;background-color:black">
 
 <br><br><br><br>
 
 
-<img src="https://images.genial.ly/59e059d30b9c21060cb4c2ec/5bbf17763292ef649e9b810f/175cbb1e-df65-405a-9cd0-cf177e1a2f00.gif?genial&1633910400074" alt="Smiley face" width="60" height="60" align="left">
+[//]: # (____________________________________BACKGROUND____________________________________)
+
+<img src="https://images.genial.ly/59e059d30b9c21060cb4c2ec/5bbf17763292ef649e9b810f/175cbb1e-df65-405a-9cd0-cf177e1a2f00.gif?genial&1633910400074" width="60" height="70" align="left">
 
 ## Background:
 <hr style="height:1.5px;border-width:10;color:blue;background-color:black">
 
-We are a small startup focusing mainly on providing machine learning solutions in the European banking market. We work on a variety of problems including fraud detection, sentiment classification and customer intention prediction and classification.
+
+Our company develops innovative Artificial Intelligence and Computer Vision solutions that revolutionize industries. Machines that can see: We pack our solutions in small yet intelligent devices that can be easily integrated to your existing data flow. Computer vision for everyone: Our devices can recognize faces, estimate age and gender, classify clothing types and colors, identify everyday objects and detect motion. Technical consultancy: We help you identify use cases of artificial intelligence and computer vision in your industry. Artificial intelligence is the technology of today, not the future.
+
+
 <br><br>
 
+[//]: # (____________________________________DATA DESCRIPTION____________________________________)
 
-<img src="https://media.baamboozle.com/uploads/images/67969/1595412283_471863" alt="Smiley face" width="60" height="60" style="float:left">
+
+<img src="https://media.baamboozle.com/uploads/images/67969/1595412283_471863"  width="60" height="70" align="left">
 
 ## Data Description:
 <hr style="height:1.5px;border-width:10;color:blue;background-color:black">
-The data comes from direct marketing efforts of a European banking institution. The marketing campaign involves making a phone call to a customer, often multiple times to ensure a product subscription, in this case a term deposit. Term deposits are usually short-term deposits with maturities ranging from one month to a few years. The customer must understand when buying a term deposit that they can withdraw their funds only after the term ends. All customer information that might reveal personal information is removed due to privacy concerns.)
 
+We collected page flipping video from smart phones and labelled them as flipping and not flipping.
+
+We clipped the videos as short videos and labelled them as flipping or not flipping. The extracted frames are then saved to disk in a sequential order with the following naming structure: VideoID_FrameNumber.
 
 <br><br>
 
-<img src="https://c.tenor.com/1_5w5vXEH5gAAAAj/mandalorian-star-wars.gif" alt="Smiley face" width="60" height="60" align="left">
 
-## Attributes:
+[//]: # (____________________________________ATTRIBUTES____________________________________)
+
+<img src="https://c.tenor.com/1_5w5vXEH5gAAAAj/mandalorian-star-wars.gif" width="60" height="60" align="left">
+
+## Goal(s)::
 <hr style="height:1.5px;border-width:10;color:blue;background-color:black">
 
-| Option | Description                                              | Type   | Default | Required? |
-| ------ | -------------------------------------------------------- | ------ | ------- | --------- |
-| `-t`   | Enables to define custom backend and frontend templates. | `bool` | `false` | No        |
-
+Predict if the page is being flipped using a single image.
 
 <br><br>
 
-<img src="https://media0.giphy.com/media/LmqdA28jZ7bitDeDWr/200.webp" alt="Smiley face" width="60" height="60" align="left">
+
+[//]: # (____________________________________PROJECT OVERVIEW____________________________________)
+
+
+<img src="https://media0.giphy.com/media/LmqdA28jZ7bitDeDWr/200.webp"  width="60" height="60" align="left">
 
 ## Project Overview:
 <hr style="height:1.5px;border-width:10;color:blue;background-color:black">
 
-As you can see, we have a high bias data toward the `no` or `non-subscribers` class, as a result, multiple technics have been applied to improve the score like **random search**, **oversampling**, **undersampling**, **MLP**, and finally **Recursive Feature Elimination**.
-![cgapp_create](https://user-images.githubusercontent.com/11155743/116796937-38160080-aae9-11eb-8e21-fb1be2750aa4.gif)
+### data preprocessing:
 
-- 📺 Full demo video: https://recordit.co/OQAwkZBrjN
-- 📖 Docs: https://github.com/create-go-app/cli/wiki/Command-create
+The original data set size was `1080 * 1920` pixels with two classes, `flip` and `notflip` class as in the following picture.
 
 
+<br><br>
 
 
+[//]: # (&#40;____________________________________ CONCLUSION____________________________________&#41;)
+
+<img src="https://media4.giphy.com/media/MbMUCH4MUffka1ZFeT/giphy.gif?cid=790b7611040baf4e7332c491694685e3367d8fe931cd7a69&rid=giphy.gif&ct=s"  width="80" height="60" align="left">
+
+## Conclusion:
+<hr style="height:1.5px;border-width:10;color:blue;background-color:black">
+
+Different model hyperparameters were tested and in general, some of the models prefer well in the range of **10** epochs. From the training and optimization section, it's clear this data prefer a learning rate of around 0.001 and tanh activation function better than relu. Our best model test score is `99.7%` with a loss equal to `0.046`.
 
 
-<h1 align="center">
-  <img src="https://raw.githubusercontent.com/create-go-app/cli/master/.github/images/cgapp_logo%402x.png" width="224px"/><br/>
-  Create Go App CLI
-</h1>
-<p align="center">Create a new production-ready project with <b>backend</b> (Golang), <b>frontend</b> (JavaScript, TypeScript)<br/>and <b>deploy automation</b> (Ansible, Docker) by running one CLI command.<br/><br/>Focus on <b>writing</b> code and <b>thinking</b> of business-logic! The CLI will take care of the rest.</p>
+                                                                          
+  <br><br>                                                                        
+  
+| Option | Description                                              | Type   | Default | Required? |
+| ------ | -------------------------------------------------------- | ------ | ------- | --------- |
+| `-t`   | Enables to define custom backend and frontend templates. | `bool` | `false` | No        |
+
 
 
 > If you're looking for the **Create Go App CLI** for Go `1.16`, you can find it [here](https://github.com/create-go-app/cli/tree/v2).
@@ -77,35 +108,3 @@ brew tap create-go-app/cli
 brew install create-go-app/cli/cgapp
 ```
 
-
-### `create`
-
-
-<hr style="height:1.5px;border-width:10;color:blue;background-color:black">
-
-<br>
-
-<h3 align="center">
-  <img src="https://thumbs.gfycat.com/PrestigiousRealCattle-size_restricted.gif" width="100px"/><br/>
-    <br>  Let's communicate 
-
-</h3>
-<br>
-
-
-<h3 align="center">
-
-[//]: # (  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png" alt="Smiley face" width="160" height="80" style="float:center">)
- <img src="img/logo.png" alt="Smiley face" width="200" height="100" style="float:center">
-
-<a href="linkedin.com/in/najwaalsaadi">
-         <img alt="Qries" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
-         width=150" height="70">
-      </a>
-
-
-</h3>
-
-
-
-<br><br>
